@@ -14,5 +14,6 @@ class Song < ActiveRecord::Base
       self.artist = Artist.all.detect{|i| i.name == "Drake"}
     else
       self.artist = Artist.new("Drake")
+    end
   end
 end
